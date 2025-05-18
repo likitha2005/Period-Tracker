@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Period Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌸 Period Tracker</h1>
+    <form id="periodForm">
+      <label for="startDate">Last Period Start Date:</label>
+      <input type="date" id="startDate" required />
+
+      <label for="cycleLength">Cycle Length (in days):</label>
+      <input type="number" id="cycleLength" value="28" required />
+
+      <button type="submit">Track My Cycle</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
